@@ -21,10 +21,10 @@ jobs:
     strategy:
       matrix:
         include:
-          - build_variant: "mt7621"
-            targets: "K2P"
-          #- build_variant: "mt7621-usb-2"
-            #targets: "MI-R3G"
+          #- build_variant: "mt7621"
+            #targets: "K2P"
+          - build_variant: "mt7621-usb-2"
+            targets: "MI-R3G"
     steps:
       - uses: actions/checkout@v2
       - name: Prepare environment
